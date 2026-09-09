@@ -58,6 +58,12 @@ function PGC.ApplySetting(key, value)
     elseif key == "sortOption" or key == "hideNoGuild" then
         -- These change which guilds are listed, or in what order
         if PGC.BarManager then PGC.BarManager:Refresh(true) end
+    elseif key == "highlightMyGuild" then
+        -- Only the colours change, so the bars stay where they are
+        if PGC.BarManager then PGC.BarManager:RecolorBars() end
+    elseif key == "showMemberTooltip" then
+        -- Read when a bar is hovered, so there is nothing to redraw
+        return
     else
         -- Everything else changes what a bar shows or how it is drawn
         if PGC.BarManager and PGC.Core and PGC.Core.contentFrame then

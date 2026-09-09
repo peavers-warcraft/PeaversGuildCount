@@ -132,6 +132,17 @@ function BarManager:UpdateAllBars(forceUpdate, noAnimation)
     end
 end
 
+-- Repaint without moving anything. Highlighting your own guild changes only
+-- which colour each bar is drawn in.
+function BarManager:RecolorBars()
+    for _, guildKey in ipairs(PGC.GuildData.guildOrder) do
+        local bar = PGC.BarPool:GetBar(guildKey)
+        if bar then
+            bar:UpdateColor()
+        end
+    end
+end
+
 function BarManager:ResizeBars()
     for _, guildKey in ipairs(PGC.GuildData.guildOrder) do
         local bar = PGC.BarPool:GetBar(guildKey)
