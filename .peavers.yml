@@ -3,6 +3,9 @@
 # Icon to display on website
 iconType: CombatRuneIcon
 
+# CurseForge project ID for download statistics
+curseForgeProjectId: 1688004
+
 # Tags for filtering and categorization
 tags:
   - group
