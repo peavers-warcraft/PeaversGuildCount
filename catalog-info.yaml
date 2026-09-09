@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: PeaversGuildCount
+  description: "A World of Warcraft addon that shows how many players from each guild are in your party or raid, as a sorted list of bars."
+  annotations:
+    github.com/project-slug: peavers-warcraft/PeaversGuildCount
+spec:
+  type: library
+  lifecycle: production
+  owner: peavers-warcraft

@@ -1,0 +1,36 @@
+## Interface: 120001, 120005, 120007, 120100
+
+## Title: |cff3abdf7Peavers|rGuildCount
+## Notes: Shows how many players from each guild are in your group
+## Author: Peavers
+## Version: 1.0.0
+
+## IconTexture: Interface\AddOns\PeaversCommons\src\Media\Icon.tga
+## Category-enUS: Peavers
+
+## X-Website: https://peavers.io
+## X-Source-Code: https://github.com/peavers-warcraft/PeaversGuildCount
+
+## Dependencies: PeaversCommons, PeaversConfig
+## SavedVariables: PeaversGuildCountDB
+
+Changelog.lua
+
+src\Main.lua
+
+src\UI\UI.lua
+
+src\Core\GuildData.lua
+
+src\Utils\Utils.lua
+src\Utils\Config.lua
+src\Utils\ConfigUI.lua
+src\Utils\EditMode.lua
+
+src\UI\StatBar.lua
+src\Core\BarPool.lua
+src\UI\TitleBar.lua
+src\UI\BarManager.lua
+
+src\Core\TestMode.lua
+src\Core\Core.lua

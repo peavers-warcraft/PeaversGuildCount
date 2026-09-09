@@ -1,0 +1,10 @@
+# .peavers.yml - Addon metadata for peavers.io website
+
+# Icon to display on website
+iconType: CombatRuneIcon
+
+# Tags for filtering and categorization
+tags:
+  - group
+  - bars
+  - guild
